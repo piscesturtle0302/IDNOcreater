@@ -2,7 +2,7 @@ package com.example.IDNOcreater.idno.web;
 
 import com.example.IDNOcreater.common.enums.WebErrCode;
 import com.example.IDNOcreater.common.util.ResultHelper;
-import com.example.IDNOcreater.idno.entity.IDNOForm;
+import com.example.IDNOcreater.idno.form.IDNOForm;
 import com.example.IDNOcreater.idno.service.IDNOService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
