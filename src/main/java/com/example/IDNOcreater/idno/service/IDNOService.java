@@ -31,9 +31,12 @@ public class IDNOService {
     }
 
     public boolean  checkNewResidenceIdNo(String str){
-
-        final char[] strArr = str.toCharArray();
-        return strArr[9]==newCheckCode(str);
+        if(str.matches("[A-Z]{1}[A-D8-9]{1}[0-9]{8}")) {
+            final char[] strArr = str.toCharArray();
+            return strArr[9] == newCheckCode(str);
+        }else{
+            return false;
+        }
     }
 
     public char newCheckCode(String str){
