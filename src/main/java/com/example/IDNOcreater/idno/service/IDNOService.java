@@ -37,16 +37,17 @@ public class IDNOService {
     }
 
     public char newCheckCode(String str){
+
         final char[] strArr = str.toCharArray();
 
         final char[] pidCharArray = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
                 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
 
+        // 2020新式證號判斷修改新增'8','9'，下方使用二元搜尋法(排序後搜尋)，需依照ASCII碼的編號排序建立陣列
         final char[] pidCharArraySecond = { '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
-                'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};//2020新式證號判斷修改新增'8','9'，下方使用二元搜尋法(排序後搜尋)，需依照ASCII碼的編號排序建立陣列
+                'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-        // 原居留證第一碼英文字應轉換為10~33，十位數*1，個位數*9，這裡直接作[(十位數*1) mod 10] + [(個位數*9) mod
-        // 10]
+        // 原居留證第一碼英文字應轉換為10~33，十位數*1，個位數*9，這裡直接作[(十位數*1) mod 10] + [(個位數*9) mod 10]
         final int[] pidResidentFirstInt = { 1, 10, 9, 8, 7, 6, 5, 4, 9, 3, 2, 2, 11, 10, 8, 9, 8, 7, 6, 5, 4, 3, 11, 3,
                 12, 10 };
 
