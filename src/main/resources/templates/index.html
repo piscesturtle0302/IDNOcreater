@@ -14,7 +14,7 @@
 <script type="text/javascript">
     $("#creatNewResidenceIdNoBtn").click(function () {
         $.ajax({
-            url: "http://localhost:8080/IDNOcreater/IDNO/creatNewRecidenceIdNo",
+            url: window.location.origin + "/IDNOcreater/IDNO/creatNewRecidenceIdNo",
             type: "GET",
             contentType: "application/json",
             dataType: "json",
@@ -31,7 +31,7 @@
         var dataJSON = {};
         dataJSON["newResidenceIdNo"] = $("#creatNewResidenceIdNo").val();
         $.ajax({
-            url: "http://localhost:8080/IDNOcreater/IDNO/checkNewResidenceIdNo",
+            url: window.location.origin + "/IDNOcreater/IDNO/checkNewResidenceIdNo",
             type: "POST",
             contentType: "application/json",
             dataType: "json",
