@@ -52,7 +52,7 @@ public class IDNOService {
 
     /** 確認新式居留證號格式 */
     public boolean  checkNewResidenceIdNo(String str){
-        if(str.matches("[A-Z]{1}[A-D8-9]{1}[0-9]{8}")) {
+        if(str.matches("[A-Z]{1}[8-9]{1}[0-9]{8}")) {
             final char[] strArr = str.toCharArray();
             return strArr[9] == newCheckCode(str);
         }else{
