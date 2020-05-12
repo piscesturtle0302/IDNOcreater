@@ -34,8 +34,12 @@ public class IDNOController {
     public Map<String,Object> checkNewResidenceIdNo(@RequestBody IDNOForm idnoform){
 
         Map<String,Object> result = new HashMap<>();
+        boolean isNewResidenceIdno = idnoService.checkNewResidenceIdNo(idnoform.getNewResidenceIdNo());
         result.put("newResidenceIdNo",idnoform.getNewResidenceIdNo());
-        result.put("result",idnoService.checkNewResidenceIdNo(idnoform.getNewResidenceIdNo()));
+        result.put("result",isNewResidenceIdno);
+        if(isNewResidenceIdno) {
+            result.put("detail", idnoService.detailNewResidenceIdNo(idnoform.getNewResidenceIdNo()));
+        }
 
         return ResultHelper.returnResult(WebErrCode.err200, result);
     }

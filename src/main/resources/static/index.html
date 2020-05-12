@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Residence ID</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+<div>
+    <p><input id="creatNewResidenceIdNoBtn" name="creatNewResidenceIdNoBtn" type="button" value="產生新式居留證號" /></p>
+    <p><input id="checkNewResidenceIdNo" name="checkNewResidenceIdNo" type="text" /><span id="checkResponse"></span></p>
+</div>
+<div>
+    <table style="border-collapse: collapse; width: 500px; height: 200px;" border="1">
+        <tbody>
+        <tr style="height: 18px; background-color: #b4d9b5;">
+            <td style="width: 5%; height: 108px; text-align: center;" rowspan="6">國民身分正代號換算數字表</td>
+            <td style="width: 5%; height: 18px; text-align: center;">代號</td>
+            <td style="width: 10%; height: 18px; text-align: center;">A</td>
+            <td style="width: 10%; height: 18px; text-align: center;">B</td>
+            <td style="width: 10%; height: 18px; text-align: center;">C</td>
+            <td style="width: 10%; height: 18px; text-align: center;">D</td>
+            <td style="width: 10%; height: 18px; text-align: center;">E</td>
+            <td style="width: 10%; height: 18px; text-align: center;">F</td>
+            <td style="width: 10%; height: 18px; text-align: center;">G</td>
+            <td style="width: 10%; height: 18px; text-align: center;">H</td>
+            <td style="width: 10%; height: 18px; text-align: center;">J</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 5%; height: 18px; text-align: center;">數字</td>
+            <td style="width: 10%; height: 18px; text-align: center;">10</td>
+            <td style="width: 10%; height: 18px; text-align: center;">11</td>
+            <td style="width: 10%; height: 18px; text-align: center;">12</td>
+            <td style="width: 10%; height: 18px; text-align: center;">13</td>
+            <td style="width: 10%; height: 18px; text-align: center;">14</td>
+            <td style="width: 10%; height: 18px; text-align: center;">15</td>
+            <td style="width: 10%; height: 18px; text-align: center;">16</td>
+            <td style="width: 10%; height: 18px; text-align: center;">17</td>
+            <td style="width: 10%; height: 18px; text-align: center;">18</td>
+        </tr>
+        <tr style="height: 18px; background-color: #b4d9b5;">
+            <td style="width: 5%; height: 18px; text-align: center;">代號</td>
+            <td style="width: 10%; height: 18px; text-align: center;">K</td>
+            <td style="width: 10%; height: 18px; text-align: center;">L</td>
+            <td style="width: 10%; height: 18px; text-align: center;">M</td>
+            <td style="width: 10%; height: 18px; text-align: center;">N</td>
+            <td style="width: 10%; height: 18px; text-align: center;">P</td>
+            <td style="width: 10%; height: 18px; text-align: center;">Q</td>
+            <td style="width: 10%; height: 18px; text-align: center;">R</td>
+            <td style="width: 10%; height: 18px; text-align: center;">S</td>
+            <td style="width: 10%; height: 18px; text-align: center;">T</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 5%; height: 18px; text-align: center;">數字</td>
+            <td style="width: 10%; height: 18px; text-align: center;">19</td>
+            <td style="width: 10%; height: 18px; text-align: center;">20</td>
+            <td style="width: 10%; height: 18px; text-align: center;">21</td>
+            <td style="width: 10%; height: 18px; text-align: center;">22</td>
+            <td style="width: 10%; height: 18px; text-align: center;">23</td>
+            <td style="width: 10%; height: 18px; text-align: center;">24</td>
+            <td style="width: 10%; height: 18px; text-align: center;">25</td>
+            <td style="width: 10%; height: 18px; text-align: center;">26</td>
+            <td style="width: 10%; height: 18px; text-align: center;">27</td>
+        </tr>
+        <tr style="height: 18px; background-color: #b4d9b5;">
+            <td style="width: 5%; height: 18px; text-align: center;">代號</td>
+            <td style="width: 10%; height: 18px; text-align: center;">U</td>
+            <td style="width: 10%; height: 18px; text-align: center;">V</td>
+            <td style="width: 10%; height: 18px; text-align: center;">X</td>
+            <td style="width: 10%; height: 18px; text-align: center;">Y</td>
+            <td style="width: 10%; height: 18px; text-align: center;">W</td>
+            <td style="width: 10%; height: 18px; text-align: center;">Z</td>
+            <td style="width: 10%; height: 18px; text-align: center;">I</td>
+            <td style="width: 10%; height: 18px; text-align: center;">O</td>
+            <td style="width: 10%; height: 18px; text-align: center;">&nbsp;</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 5%; height: 18px; text-align: center;">數字</td>
+            <td style="width: 10%; height: 18px; text-align: center;">28</td>
+            <td style="width: 10%; height: 18px; text-align: center;">29</td>
+            <td style="width: 10%; height: 18px; text-align: center;">30</td>
+            <td style="width: 10%; height: 18px; text-align: center;">31</td>
+            <td style="width: 10%; height: 18px; text-align: center;">32</td>
+            <td style="width: 10%; height: 18px; text-align: center;">33</td>
+            <td style="width: 10%; height: 18px; text-align: center;">34</td>
+            <td style="width: 10%; height: 18px; text-align: center;">35</td>
+            <td style="width: 10%; height: 18px; text-align: center;">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <p>&nbsp;</p>
+    <table style="border-collapse: collapse; width: 800px; height: 200px;" border="1">
+        <tbody>
+        <tr style="height: 18px; background-color: #edd077;">
+            <td style="width: 24%; height: 18px; text-align: center;">統一證號</td>
+            <td style="height: 18px; text-align: center; width: 7%;" colspan="2">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 24%; height: 18px; text-align: center;">統號(a)</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 24%; height: 18px; text-align: center;">對應特定數(b)</td>
+            <td style="height: 18px; text-align: center; width: 7%;">1</td>
+            <td style="height: 18px; text-align: center; width: 7%;">9</td>
+            <td style="height: 18px; text-align: center; width: 7%;">8</td>
+            <td style="height: 18px; text-align: center; width: 7%;">7</td>
+            <td style="height: 18px; text-align: center; width: 7%;">6</td>
+            <td style="height: 18px; text-align: center; width: 7%;">5</td>
+            <td style="height: 18px; text-align: center; width: 7%;">4</td>
+            <td style="height: 18px; text-align: center; width: 7%;">3</td>
+            <td style="height: 18px; text-align: center; width: 7%;">2</td>
+            <td style="height: 18px; text-align: center; width: 7%;">1</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 24%; height: 18px; text-align: center;">各碼統號乘以特定數(a*b)</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+            <td style="height: 18px; text-align: center; width: 7%;">&nbsp;</td>
+        </tr>
+        <tr style="height: 18px;">
+            <td style="width: 24%; height: 18px; text-align: center;">基數(個位數相加)</td>
+            <td style="height: 18px; text-align: center; width: 7%;" colspan="10">&nbsp;</td>
+        </tr>
+        <tr style="height: 18px; background-color: #edb174;">
+            <td style="width: 24%; height: 18px; text-align: center;">檢查碼(10減基數之個位數)</td>
+            <td style="height: 18px; text-align: center; width: 7%;" colspan="10">&nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<script type="text/javascript">
+    $("#creatNewResidenceIdNoBtn").click(function () {
+        $.ajax({
+            url: window.location.origin + "/IDNOcreater/IDNO/creatNewRecidenceIdNo",
+            type: "GET",
+            contentType: "application/json",
+            dataType: "json",
+            success: function(data) {
+                $("#checkNewResidenceIdNo").val(data.data.newResidenceIdNo).change();
+            },
+            error: function() {
+                alert("ERROR!!!");
+            }
+        });
+    });
+
+    $("#checkNewResidenceIdNo").change(function () {
+        var dataJSON = {};
+        dataJSON["newResidenceIdNo"] = $("#checkNewResidenceIdNo").val();
+        $.ajax({
+            url: window.location.origin + "/IDNOcreater/IDNO/checkNewResidenceIdNo",
+            type: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(dataJSON),
+            success: function(data) {
+                if(data.data.result){
+                    $("#checkResponse").html("符合規則").css("color", "green");
+                    console.log(data.data.detail);
+                }else{
+                    $("#checkResponse").html("不符合規則").css("color", "red");
+                }
+            },
+            error: function() {
+                alert("ERROR!!!");
+            }
+        });
+    });
+</script>
+</html>
