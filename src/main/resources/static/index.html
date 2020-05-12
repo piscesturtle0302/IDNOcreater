@@ -91,7 +91,7 @@
 </div>
 <div>
     <p>&nbsp;</p>
-    <table style="border-collapse: collapse; width: 800px; height: 200px;" border="1">
+    <table id="calculation" style="border-collapse: collapse; width: 800px; height: 200px;" border="1">
         <tbody>
         <tr style="height: 18px; background-color: #edd077;">
             <td style="width: 24%; height: 18px; text-align: center;">統一證號</td>
@@ -154,6 +154,7 @@
         </tr>
         </tbody>
     </table>
+    <p style="color: red">*基數取個位數為0時，檢查碼則直接取0</p>
 </div>
 </body>
 <script type="text/javascript">
@@ -173,6 +174,7 @@
     });
 
     $("#checkNewResidenceIdNo").change(function () {
+        var table = $("#calculation");
         var dataJSON = {};
         dataJSON["newResidenceIdNo"] = $("#checkNewResidenceIdNo").val();
         $.ajax({
@@ -183,8 +185,29 @@
             data: JSON.stringify(dataJSON),
             success: function(data) {
                 if(data.data.result){
+                    var countStr = "";
+                    var countInt = 0;
                     $("#checkResponse").html("符合規則").css("color", "green");
                     console.log(data.data.detail);
+                    for(var i=0;i<dataJSON.newResidenceIdNo.length-1;i++){
+                        $("tr:nth-child(1) td:nth-child("+ (i+2) +")", table).html(dataJSON.newResidenceIdNo.charAt(i));
+                    }
+                    for(var j=0;j<10;j++){
+                        $("tr:nth-child(2) td:nth-child("+ (j+2) +")", table).html(data.data.detail.idToInt[j]);
+                        $("tr:nth-child(4) td:nth-child("+ (j+2) +")", table).html(data.data.detail.intToCount[j]);
+                        countInt += data.data.detail.countDivideTen[j];
+                        if(j==0){
+                            countStr += data.data.detail.countDivideTen[j];
+                        }else{
+                            countStr += "+" + data.data.detail.countDivideTen[j];
+                        }
+                    }
+                    $("tr:nth-child(5) td:nth-child(2)", table).html(countStr + "=" + countInt);
+                    if(data.data.detail.checkCode[0] != 0){
+                        $("tr:nth-child(6) td:nth-child(2)", table).html("10-" + (10-data.data.detail.checkCode[0]) + "=" + data.data.detail.checkCode[0]);
+                    }else{
+                        $("tr:nth-child(6) td:nth-child(2)", table).html(data.data.detail.checkCode[0]);
+                    }
                 }else{
                     $("#checkResponse").html("不符合規則").css("color", "red");
                 }
