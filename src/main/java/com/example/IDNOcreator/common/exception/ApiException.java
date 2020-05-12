@@ -1,6 +1,6 @@
-package com.example.IDNOcreater.common.exception;
+package com.example.IDNOcreator.common.exception;
 
-import com.example.IDNOcreater.common.enums.WebErrCode;
+import com.example.IDNOcreator.common.enums.WebErrCode;
 
 public class ApiException extends Exception {
 	

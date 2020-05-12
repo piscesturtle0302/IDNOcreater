@@ -1,4 +1,4 @@
-package com.example.IDNOcreater.idno.form;
+package com.example.IDNOcreator.idno.form;
 
 import lombok.Getter;
 import lombok.Setter;

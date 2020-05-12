@@ -1,10 +1,10 @@
-package com.example.IDNOcreater;
+package com.example.IDNOcreator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IdnOcreaterApplicationTests {
+class IdnOcreatorApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.example.IDNOcreater.common.enums;
+package com.example.IDNOcreator.common.enums;
 
 public enum WebErrCode {
 	err200(200,"success")

@@ -1,4 +1,4 @@
-package com.example.IDNOcreater.idno.service;
+package com.example.IDNOcreator.idno.service;
 
 import org.springframework.stereotype.Service;
 

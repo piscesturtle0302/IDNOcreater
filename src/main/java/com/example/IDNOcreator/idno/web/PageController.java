@@ -1,4 +1,4 @@
-package com.example.IDNOcreater.idno.web;
+package com.example.IDNOcreator.idno.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

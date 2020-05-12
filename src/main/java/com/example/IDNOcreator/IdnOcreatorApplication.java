@@ -1,13 +1,13 @@
-package com.example.IDNOcreater;
+package com.example.IDNOcreator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IdnOcreaterApplication {
+public class IdnOcreatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IdnOcreaterApplication.class, args);
+		SpringApplication.run(IdnOcreatorApplication.class, args);
 	}
 
 }

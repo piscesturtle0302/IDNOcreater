@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>IDNOcreater</artifactId>
+	<artifactId>IDNOcreator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>IDNOcreater</name>
+	<name>IDNOcreator</name>
 	<description>Creat or Check ROC ID number</description>
 
 	<properties>

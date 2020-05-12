@@ -1,7 +1,7 @@
-package com.example.IDNOcreater.common.util;
+package com.example.IDNOcreator.common.util;
 
-import com.example.IDNOcreater.common.enums.WebErrCode;
-import com.example.IDNOcreater.common.exception.ApiException;
+import com.example.IDNOcreator.common.enums.WebErrCode;
+import com.example.IDNOcreator.common.exception.ApiException;
 
 import java.util.HashMap;
 import java.util.Map;
