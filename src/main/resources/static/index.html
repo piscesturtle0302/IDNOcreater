@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>New Residence ID</title>
-    <link rel="icon" href="/static/favicon.jpg" type="image/x-icon" />
+    <link rel="icon" href="favicon.jpg" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div>
-    <p><input id="creatNewResidenceIdNoBtn" name="creatNewResidenceIdNoBtn" type="button" value="產生新式居留證號" /></p>
-    <p><input id="checkNewResidenceIdNo" name="checkNewResidenceIdNo" type="text" /><span id="checkResponse"></span></p>
+    <p><button class="ui-button ui-widget ui-corner-all" id="creatNewResidenceIdNoBtn" name="creatNewResidenceIdNoBtn">產生新式居留證號</button></p>
+    <p><label for="checkNewResidenceIdNo">驗證新式居留證號 : </label><input id="checkNewResidenceIdNo" name="checkNewResidenceIdNo" type="text" /><span id="checkResponse"></span></p>
 </div>
 <div>
     <table style="border-collapse: collapse; width: 500px; height: 200px;" border="1">
@@ -90,8 +91,8 @@
         </tbody>
     </table>
 </div>
+<p>&nbsp;</p>
 <div>
-    <p>&nbsp;</p>
     <table id="calculation" style="border-collapse: collapse; width: 800px; height: 200px;" border="1">
         <tbody>
         <tr style="height: 18px; background-color: #edd077;">
