@@ -8,6 +8,7 @@ class IdnOcreatorApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.print("test");
 	}
 
 }
