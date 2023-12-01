@@ -162,7 +162,7 @@
 <script type="text/javascript">
     $("#creatNewResidenceIdNoBtn").click(function () {
         $.ajax({
-            url: window.location.origin + "/IDNOcreator/IDNO/creatNewRecidenceIdNo",
+            url: window.location.origin + "/IDNO/creatNewRecidenceIdNo",
             type: "GET",
             contentType: "application/json",
             dataType: "json",
@@ -180,7 +180,7 @@
         var dataJSON = {};
         dataJSON["newResidenceIdNo"] = $("#checkNewResidenceIdNo").val();
         $.ajax({
-            url: window.location.origin + "/IDNOcreator/IDNO/checkNewResidenceIdNo",
+            url: window.location.origin + "/IDNO/checkNewResidenceIdNo",
             type: "POST",
             contentType: "application/json",
             dataType: "json",

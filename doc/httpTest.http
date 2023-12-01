@@ -1,0 +1,15 @@
+GET http://localhost:8080
+
+###
+
+GET http://localhost:8080/IDNO/creatNewRecidenceIdNo
+content-type: application/json
+###
+
+POST http://localhost:8080/IDNO/checkNewResidenceIdNo
+content-type: application/json
+
+{
+  "newResidenceIdNo": "E836095538"
+}
+###
